@@ -11,3 +11,9 @@
  * 
  * **/
 
+ const smash = a => a.join(" ")
+
+ const test1 = ["hello", "world"]
+const test2 = ["this", "is", "a", "really", "long", "sentence"]
+
+console.log(smash(test2))
