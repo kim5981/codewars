@@ -9,3 +9,17 @@
  * 
  */
 
+
+  function removeEveryOther(arr){
+    arr.forEach((item, index) => {
+        arr.splice(index + 1, 1)
+    })
+    return arr
+  }
+
+ 
+  //for tests
+//   const test1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+//   const test2 = ["hello", "goodbye", "hello again"]
+//   const test3 = [1,2]
+//   console.log(removeEveryOther(test3))
