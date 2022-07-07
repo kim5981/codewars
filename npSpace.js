@@ -3,3 +3,5 @@
  * then return the resultant string.
  */
 
+ const noSpace = x => x.trim().split(" ").join("")
+
