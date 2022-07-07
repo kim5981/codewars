@@ -5,3 +5,7 @@
 
  const noSpace = x => x.split(" ").join("")
 
+/**
+ * alternative:
+ * const noSpace = x => x.replace(/ g/, "")
+ */
