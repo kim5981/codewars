@@ -27,3 +27,51 @@
     Input: ["sheep", "sheep", "wolf"]
     Output: "Pls go away and stop eating my sheep"
    */
+
+    
+
+function warnTheSheep(q) {
+    let res
+    let wolf = q.length - 1
+    q.map(sheep => {
+      if(
+        sheep === "wolf" 
+         && q.indexOf(sheep) === wolf
+      ){
+      res = "Pls go away and stop eating my sheep"
+      } else {
+        
+        const reverse = () => {
+          q.forEach((sheep, index) => {
+          return sheep = index + 1
+        })
+        return q.reverse()
+        }
+        
+        q.map( (sheep, index) => {
+          if (sheep === "wolf"){
+            // set watchOut to wolf's index + 1
+            let watchOut = index + 1
+            // set the index of that equal the content 
+            // to that of the index in the reverse fn
+            
+            // use that for res
+            
+          }
+        })
+        
+          
+        
+        res = `Oi! Sheep number ${sheep}! You are about to be eaten by a wolf!`
+        
+      }
+    })
+    return res
+  }
+  
+  
+  
+  const closeWolf = ["sheep", "sheep", "wolf"]
+  const dangerSheep = ["sheep", "sheep", "sheep", "wolf", "sheep"]
+  
+  console.log(warnTheSheep(dangerSheep))
