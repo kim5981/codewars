@@ -12,3 +12,11 @@ function solution(s) {
 function solution(i) {
     return parseFloat(i)
 }
+
+/*Write a function that converts a floating point number to a string
+* with a specific number of digits past the decimal place 
+*/
+
+function solution(f, places) {
+    return String(f.toFixed(places))
+}
