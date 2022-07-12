@@ -9,3 +9,6 @@ function solution(s) {
 }
 
 //Write a function that converts an integer to a floating point number.
+function solution(i) {
+    return parseFloat(i)
+}
