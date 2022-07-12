@@ -20,3 +20,19 @@ function solution(i) {
 function solution(f, places) {
     return String(f.toFixed(places))
 }
+
+/**
+ * Write a function that computes the absolute value of a number.
+ * Solve this without using the built-in absolute value function.
+ * -- Math.abs()
+ */
+ function solution(x) {
+    return Math.sign(x) === 1 ? x : x * -1
+}
+
+
+/**
+ * Write a function that returns true if a number is between 2 and 7,
+ * exclusive. (That is, between 3 and 6, inclusive.)
+ */
+
