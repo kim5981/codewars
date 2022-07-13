@@ -51,7 +51,6 @@ function solution(f, places) {
 
 /** 
  * Return the largest of six numbers.
-
 Do not use any built-in maximum value function to solve this!
 */
 
