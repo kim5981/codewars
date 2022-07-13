@@ -59,6 +59,17 @@
   * [1, 2, 3, 4, 5] which is in strictly ascending order
   */
 
+ function isAscending(a){
+    for(let i=0; i < a.length - 1; i++){
+        const currentNum = a[i]
+        const nextNum = a[i + 1]
+        if( currentNum >= nextNum){
+            return false
+        }
+        return true
+    }
+ }
+
  function ascSolution(a){
     return null
  }
