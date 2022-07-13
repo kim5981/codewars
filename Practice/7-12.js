@@ -86,3 +86,9 @@
     }
     return isAscending(b)
  }
+
+ //check if a given string is in strictly alphabetical order
+  
+ function strictlyAlphabetical(){
+    return null
+ }
