@@ -89,6 +89,13 @@
 
  //check if a given string is in strictly alphabetical order
   
- function strictlyAlphabetical(){
-    return null
+ function strictlyAlphabetical(s){
+    for(let i=0; i<s.length-1; i++){
+        const current = s[i]
+        const next = s[i +1]
+        if(current.charCodeAt(0+1) !== next.charCodeAt(0)){
+            return false
+        }
+        return true
+    }
  }
