@@ -16,4 +16,23 @@
   * (numbers[i], numbers[i+1], numbers[i+2]) is a zig-zag, and a 0 otherwise
   */
 
- 
+ function isZigZag(a,b,c){
+    if( (a > b && b < c) || (a < b && b > c)){
+        return 1
+    }
+    return 0
+ }
+
+ function solution(numbers){
+    const soln = [] // push the results to empty array
+
+    for( let i=0; i < numbers.length - 2; i++){
+        //store n's in variables for comparison
+        const a = numbers[i]
+        const b = numbers[i+1]
+        const c = numbers[i+ 2]
+
+        soln.push(isZigZag(a,b,c))
+    }
+    return soln
+ }
