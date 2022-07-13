@@ -71,5 +71,18 @@
  }
 
  function ascSolution(a){
-    return null
+    let start = 0
+    let end = a.length - 1 
+    const b = []
+    while(start <= end){ // loop through while start is <= end
+        if(start === end){ // it will be equal if a has an odd number, at the center index
+            b.push(a[start])
+        } else {
+            b.push(a[start]) // continuously push i's at start from 0
+            b.push(a[end]) // and at end 
+        }
+        start++ // increment/ decrement e/ time to get to the middle
+        end-- 
+    }
+    return isAscending(b)
  }
