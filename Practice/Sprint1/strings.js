@@ -17,3 +17,9 @@ function factorial(n) {
 }
 
 console.log(factorial(5))
+
+//Compute the product of all numbers from a to b, inclusive.
+
+function productOfAllNums(a, b){
+    return null
+}
