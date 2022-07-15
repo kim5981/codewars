@@ -56,5 +56,12 @@ function productOfAllNums(a, b){
  */
 
 function letterOccurrences(s, letter){
-    
+    let counter = 0
+    let split = s.split("")
+    split.forEach(l => {
+        if(l === letter){
+            counter += 1
+        }
+    })   
+    return counter
 }
