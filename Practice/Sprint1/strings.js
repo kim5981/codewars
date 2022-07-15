@@ -38,3 +38,11 @@ function productOfAllNums(a, b){
  * return the string "none". Otherwise, return the
  * character at that index.
  */
+ function charAtIndex(s, n) {
+    if(s.length < n + 1 || n < 0){
+        return "none"
+    }
+    return s[n]
+}
+
+console.log(solution("hello", 1))
