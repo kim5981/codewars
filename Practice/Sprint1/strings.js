@@ -45,4 +45,16 @@ function productOfAllNums(a, b){
     return s[n]
 }
 
-console.log(solution("hello", 1))
+/**
+ * Count the number of occurrences of a letter in a string.
+ * Do not use any built-in count() style functions for this task.
+ * 
+ * Ex:
+ * s == "bacab"
+ * letter = "b"
+ * Output: 2
+ */
+
+function letterOccurrences(s, letter){
+    
+}
