@@ -21,5 +21,12 @@ console.log(factorial(5))
 //Compute the product of all numbers from a to b, inclusive.
 
 function productOfAllNums(a, b){
-    return null
+    // a=2 b =4
+    let current = 1
+    //set loop to start at a(2), and end at b(4)
+    for(let i = a; i<= b; i++){
+        //current = current (1) * i (a=2)
+        current *= i;
+    }
+    return current
 }
