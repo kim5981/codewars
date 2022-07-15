@@ -30,3 +30,11 @@ function productOfAllNums(a, b){
     }
     return current
 }
+
+/**
+ * Return the character at index n in a string s.
+ * 
+ * If the index is out of range of the length of the string,
+ * return the string "none". Otherwise, return the
+ * character at that index.
+ */
