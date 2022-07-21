@@ -273,5 +273,19 @@ function digitsSoln2(digits){
  * Avoid using built-in big integers to solve this challenge.
  */
 
+// since working with binary nums, need to make sure both strings are same length
 
+function convertStrLength(a,b){
+    if(a.length > b.length){
+        const dif = a.length - b.length
+        // zeros to add in front of str
+        const zeros = Array(dif).fill("0").join("")
+        b = zeros + b
+    } else if( b.length > a.length){
+        const dif = b.length - a.length
+        const zeros = Array(dif).fill("0").join("")
+        a = zeros + a
+    }
+    return [a, b]
+}
 
