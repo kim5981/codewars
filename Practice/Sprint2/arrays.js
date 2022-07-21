@@ -97,3 +97,6 @@ function filterArray(a, filterList){
 }
 
 
+function filterArray2(a, filterList){
+    return a.filter(num => !filterList.includes(num))
+}
