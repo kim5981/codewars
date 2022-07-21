@@ -259,3 +259,19 @@ function digitsSoln2(digits){
     if(carryOverOne) digits.unshift(1)
     return digits
 }
+
+
+/**
+ * Given two binary strings a and b, add them together and return the resulting string.
+ * 
+ * For a = "1000" and b = "111", the output should be
+ * solution(a, b) = "1111";
+ * 
+ * For a = "1" and b = "1", the output should be
+ * solution(a, b) = "10".
+ * 
+ * Avoid using built-in big integers to solve this challenge.
+ */
+
+
+
