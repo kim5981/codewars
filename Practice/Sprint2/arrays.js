@@ -88,3 +88,12 @@ function excludeX(a, x) {
  * Output: [1, 10]
  */
 
+function filterArray(a, filterList){
+    const arr = []
+    for (let num of a){
+        if(!filterList.includes(num)) arr.push(num);
+    }
+    return arr;
+}
+
+
