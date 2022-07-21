@@ -130,3 +130,9 @@ function nStringOfA(n, m){
  * Ex:
  * For arr = [1, 2, 2, 4], the output should be solution(arr) = [1, 0]
 */
+
+
+
+function triangularArray(array){
+    
+}
