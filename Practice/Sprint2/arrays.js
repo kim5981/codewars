@@ -62,3 +62,7 @@ function copiesOfStrings(p, n, m) {
     
     return strPAB;   
 }
+
+//Given an array and a value x, return an array 
+//with all the elements of the original except those with value x.
+
