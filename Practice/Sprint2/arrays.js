@@ -185,3 +185,17 @@ function cyclicShift(arr){
     const first = arr.shift() // removes the first item in array and returns what was removed
     arr.push(first)
 }
+
+function shiftsSolution(elements) {
+    let count = 0;
+    // see if array is in order with fn
+    // if not, shift the #'s
+    for(let i = 0; i < elements.length; i++){
+        // if it's in order, shift count is still 0 and we can return count as is
+        if(isInOrder(elements)) return count;
+        cyclicShift(elements)
+        count += 1
+    }
+    // still hasn't gotten in order after loop, can return - 1
+    return -1
+}
