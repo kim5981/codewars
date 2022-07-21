@@ -321,6 +321,33 @@ function binaryStrings(a, b){
         const binNumTwo = b[i]
 
         // since carrying the 1 is defaulted to false, handle the cases for when it's true
+        if(carry){
 
+            if(binNum1 === "1" && binNum2 === "1"){ // 1 + 1 --> carry 1
+                sol = "1" + sol                
+                } else if ( binNum1 === "1" && binNum2 === "0" // 1 + 0 --> 1
+                || binNum1 === "0"&& binNum2 === "1" ){
+                    sol = "0" + sol
+                } else {
+                    sol = "1" + sol // add the carried over 1
+                    carry = false
+                }
+
+        } else {
+
+
+            if(binNum1 === "1" && binNum2 === "1"){
+                sol = "0" + sol                
+                carry = true
+                } else if( binNum1 === "1" && binNum2 === "0"
+                || binNum1 === "0" && binNum2 === "1" ){
+                    sol = "1" + sol
+                } else {
+                    sol = "0" + sol
+                }
+
+        }
     }
+    if(carry) sol = "1" + sol
+    return sol
 }
