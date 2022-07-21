@@ -275,6 +275,22 @@ function digitsSoln2(digits){
 
 // since working with binary nums, need to make sure both strings are same length
 
+
+// my notes..
+/**
+ * scenarios for binary addition
+ * a = 1           b = 1 -->        1 + 1 + 1 (1 is carried)
+ * a = 1 or 0      b = 1 or 0 -->   1 + 0 + 1 (1 is carried)
+ * a = 0           b = 0 -->        1 + 0 + 0 (don't carry 1)
+ * 
+ * if you aren't carrying 1..
+ * 1 + 1 = 1 0 (1 is carried)
+ * 1 + 0 = 1
+ * 0 + 0 = 0
+ * 
+ */
+
+
 function convertStrLength(a,b){
     if(a.length > b.length){
         const dif = a.length - b.length
@@ -303,5 +319,8 @@ function binaryStrings(a, b){
         // set starting points for loop starting at end of str
         const binNumOne = a[i]
         const binNumTwo = b[i]
+
+        // since carrying the 1 is defaulted to false, handle the cases for when it's true
+
     }
 }
