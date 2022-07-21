@@ -170,3 +170,14 @@ function triangularArray(array){
  * 
  * If there is no such t, return -1.
  */
+
+ function isInOrder(arr){
+    // arr.length - 2 bc there's no # after last index
+    for(let i = 0; i < arr.length - 1; i++){
+        const current = arr[i]
+        const next = arr[i + 1]
+        if( current + 1 !== next) return false;
+    }
+    return true;
+}
+
