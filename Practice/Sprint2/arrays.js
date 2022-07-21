@@ -131,7 +131,14 @@ function nStringOfA(n, m){
  * For arr = [1, 2, 2, 4], the output should be solution(arr) = [1, 0]
 */
 
-
+// making a function to test to see if a, b, & c meet parameters 
+function isTriangle(a, b, c){
+    if( 
+        a + b > c
+        && a + c > b 
+        && b + c > a ) return 1;
+        return 0;
+}
 
 function triangularArray(array){
     
