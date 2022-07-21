@@ -75,3 +75,16 @@ function excludeX(a, x) {
     return result
 }
 
+/**
+ * Given an input array a and a second array, filter_array, 
+ * produce a new array that contains only the elements of a that are not in filter_array
+ * 
+ * The elements in the result array should be in the same order that they appeared in array a.
+ * 
+ * Ex:
+ * a = [1, 7, 2, 10, 7]
+ * b = b == [2, 7]
+ * 
+ * Output: [1, 10]
+ */
+
