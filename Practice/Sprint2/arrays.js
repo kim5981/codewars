@@ -237,3 +237,25 @@ function digitsSoln1(digits){
     return newDigits
 }
 
+// accounts for arr [9, 9, 9, 9] , all edge cases
+function digitsSoln2(digits){
+    // carryOver tells function to add one at the end of loop or not
+    let carryOverOne = false
+    // work backwards through digits array
+    for(let i = digits.length - 1; i >= 0 ; i--){
+        const digit = digits[i]
+        const digitCounter = digit + 1
+        // if digits[i] + 1 = 10 (or if it's equal to 9)
+        if(digitCounter === 10){
+            // set it's value to 0
+            digits[i] = 0   
+            carryOverOne = true    
+        } else {
+            digits[i] = digitCounter
+            carryOverOne = false
+            break;
+        }
+    }
+    if(carryOverOne) digits.unshift(1)
+    return digits
+}
