@@ -289,3 +289,19 @@ function convertStrLength(a,b){
     return [a, b]
 }
 
+function binaryStrings(a, b){
+
+    // use fn to set a & b to equal lengths
+    [a, b] = convertStrLength(a, b)
+
+    // binary addition conditionally carries over the one, set it to false for now 
+    let carry = false
+
+    let sol = ""
+
+    for(let i = a.length - 1; i >= 0; i--){
+        // set starting points for loop starting at end of str
+        const binNumOne = a[i]
+        const binNumTwo = b[i]
+    }
+}
