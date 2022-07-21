@@ -219,3 +219,21 @@ function shiftsSolution(elements) {
  * solution(digits) = [1, 0, 0, 0]
  */
 
+//* does not work for large numbers **//
+function digitsSoln1(digits){
+    
+    let str = digits.join("")
+
+    let num = parseInt(str)
+    num = num + 1
+
+    let numStr = String(num)
+
+    const newDigits = []
+    for(let i=0; i < numStr.length; i++){
+        newDigits.push(parseInt(numStr[i]))
+    }
+   
+    return newDigits
+}
+
