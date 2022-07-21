@@ -104,3 +104,11 @@ function filterArray2(a, filterList){
 // Produce an array of n strings.
 // Each string will contain m uppercase "A"s.
 
+function nStringOfA(n, m){
+    let str = ""
+    for(let i = 0; i < m; i++){
+        str += "A"
+    }
+    let arr = Array(n).fill(str)
+    return arr
+}
