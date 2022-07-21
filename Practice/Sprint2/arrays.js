@@ -141,5 +141,13 @@ function isTriangle(a, b, c){
 }
 
 function triangularArray(array){
-    
+    const res = []
+    // arr.length - 2 bc you only want loop to continue if you can test a & b with i
+    for(let i=0; i < array.length - 2; i++){
+        let a = array[i]
+        let b = array[i + 1]
+        let c = array[i + 2]
+    res.push(isTriangle(a, b, c))
+    }
+    return res
 }
