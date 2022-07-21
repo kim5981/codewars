@@ -181,3 +181,7 @@ function triangularArray(array){
     return true;
 }
 
+function cyclicShift(arr){
+    const first = arr.shift() // removes the first item in array and returns what was removed
+    arr.push(first)
+}
