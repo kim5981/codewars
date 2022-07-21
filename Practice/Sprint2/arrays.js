@@ -151,3 +151,22 @@ function triangularArray(array){
     }
     return res
 }
+
+/**
+ * For an array a and an integer t (0 ≤ t < a.length),
+ *  let's define cyclic t-shift operation as carrying t elements from the beginning of the array to the end
+ * 
+ * For example, applying cyclic t-shift to a = [1, 2, 3, 4] 
+ * can turn it into four different arrays:
+ * 
+ * [1, 2, 3, 4] (0-shift),
+ * [2, 3, 4, 1] (1-shift: one element from the beginning, i.e. 1, was carried to the end),
+ * [3, 4, 1, 2] (2-shift: two elements, i.e. 1, 2, were carried to the end),
+ * [4, 1, 2, 3] (3-shift: 1, 2, 3 were carried to the end)
+ * 
+ * Given an array of integers elements, find such t (0 ≤ t < elements.length) that
+ * cyclic t-shift operation turns elements into a sorted array 
+ * [1, 2, ..., elements.length]
+ * 
+ * If there is no such t, return -1.
+ */
