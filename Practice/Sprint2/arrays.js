@@ -66,3 +66,12 @@ function copiesOfStrings(p, n, m) {
 //Given an array and a value x, return an array 
 //with all the elements of the original except those with value x.
 
+function excludeX(a, x) {
+    const result = []
+    a.map(n =>{
+        if(n != x)
+        return result.push(n) 
+    })
+    return result
+}
+
