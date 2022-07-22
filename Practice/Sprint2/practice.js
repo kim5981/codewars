@@ -175,7 +175,8 @@ function triangularArray(array){
     return res
 }
 
-/**
+/** -- How Many Cyclic Shifts To Sort An Array?
+ * 
  * For an array a and an integer t (0 ≤ t < a.length),
  *  let's define cyclic t-shift operation as carrying t elements from the beginning of the array to the end
  * 
@@ -225,7 +226,8 @@ function shiftsSolution(elements) {
 
 
 
-/**
+/** -- Digits + 1
+ * 
  * You are given an array of integers digits representing the digits of a positive integer.
  * 
  * For example, digits = [1, 2, 3] represents the integer 123.
@@ -286,7 +288,8 @@ function digitsSoln2(digits){
 }
 
 
-/**
+/** -- Binary Addition 
+ * 
  * Given two binary strings a and b, add them together and return the resulting string.
  * 
  * For a = "1000" and b = "111", the output should be
