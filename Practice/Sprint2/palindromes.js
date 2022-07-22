@@ -24,3 +24,11 @@
  * Input:               Output: 
  * current = 999999     "000000"
  */
+
+ function isNPalindrome(n){
+    const checkN = String(n).padStart(6, "0")
+    const palindrome = String(checkN).split("").reverse().join("")
+    return checkN === palindrome
+}
+
+
