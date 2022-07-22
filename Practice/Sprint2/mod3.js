@@ -56,3 +56,18 @@ function odometerPalindrome(current) {
                                 [4, 8, 12, 16]
                             ]
    */
+
+    function multiTable(n) {
+        const outerArr = []
+        
+        for(let i = 1; i <= n; i++){
+            const row = []
+            
+            for(let j=1; j <= n; j++){
+                row.push(i*j)
+            }
+            outerArr.push(row)
+        }
+        return outerArr
+    }
+                                                   
