@@ -25,7 +25,7 @@
  * current = 999999     "000000"
  */
 
- function isNPalindrome(n){
+ function isNumPalindrome(n){
     const checkN = String(n).padStart(6, "0")
     const palindrome = String(checkN).split("").reverse().join("")
     return checkN === palindrome
@@ -34,6 +34,6 @@
 function odometerPalindrome(current) {
     if(current === 999999) return "000000"
     current ++
-    while(!isPalindrome(current)) current ++
+    while(!isNumPalindrome(current)) current ++
     return String(current).padStart(6, "0")
   }
