@@ -1,5 +1,11 @@
-// Return the number of occurrences of v in array a
-// If the array is empty, return 0.
+
+
+/** -- How Many V's ?
+ * 
+ * Return the number of occurrences of v in array a
+ * If the array is empty, return 0.
+ */
+
 
 function occurrencesOfV(a, v){
     if(a.length < 1){
@@ -16,6 +22,8 @@ function occurrencesOfV(a, v){
 
 
 /**
+ * -- N Copies of Strings 
+ * 
  * Construct a string of p copies of n capital "A"s and m capital "B"s.
  * 
  * Except if the copy number is evenly divisible by 3, in which case insert a string of p capital "X"s instead.
@@ -63,8 +71,13 @@ function copiesOfStrings(p, n, m) {
     return strPAB;   
 }
 
-//Given an array and a value x, return an array 
-//with all the elements of the original except those with value x.
+/**
+ * -- New Array Without X !!
+ * 
+ * Given an array and a value x, return an array 
+ * with all the elements of the original except those with value x.
+ * 
+ */
 
 function excludeX(a, x) {
     const result = []
@@ -76,6 +89,8 @@ function excludeX(a, x) {
 }
 
 /**
+ * -- Filter Array from Array
+ * 
  * Given an input array a and a second array, filter_array, 
  * produce a new array that contains only the elements of a that are not in filter_array
  * 
@@ -101,8 +116,13 @@ function filterArray2(a, filterList){
     return a.filter(num => !filterList.includes(num))
 }
 
-// Produce an array of n strings.
-// Each string will contain m uppercase "A"s.
+/**
+ *  -- Array of n "A"s 
+ * 
+ * Produce an array of n strings.
+ * Each string will contain m uppercase "A"s.
+*/
+
 
 function nStringOfA(n, m){
     let str = ""
@@ -114,6 +134,8 @@ function nStringOfA(n, m){
 }
 
 /**
+ * -- How Many Triangles?
+ * 
  * You are given an array of positive integers arr. 
  * You'd like to know how many triangles can be formed with side lengths equal to adjacent elements from arr.
  *  
@@ -131,7 +153,8 @@ function nStringOfA(n, m){
  * For arr = [1, 2, 2, 4], the output should be solution(arr) = [1, 0]
 */
 
-// making a function to test to see if a, b, & c meet parameters 
+
+// function to test to see if a, b, & c meet parameters 
 function isTriangle(a, b, c){
     if( 
         a + b > c
@@ -199,6 +222,8 @@ function shiftsSolution(elements) {
     // still hasn't gotten in order after loop, can return - 1
     return -1
 }
+
+
 
 /**
  * You are given an array of integers digits representing the digits of a positive integer.
