@@ -31,4 +31,9 @@
     return checkN === palindrome
 }
 
-
+function odometerPalindrome(current) {
+    if(current === 999999) return "000000"
+    current ++
+    while(!isPalindrome(current)) current ++
+    return String(current).padStart(6, "0")
+  }
