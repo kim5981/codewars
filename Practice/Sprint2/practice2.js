@@ -62,7 +62,7 @@ function identityMatrix(size) {
 }
 
 
-/**
+/** -- Code in Bug
  * There is a bug in one line of the code. Find it, fix it, and submit.
  * 
  * Given a rectangular matrix of characters, add a border of asterisks(*) to it.
@@ -106,7 +106,7 @@ function starsBorder(picture){
       
 }
 
-/**
+/** -- Substring 
  * Return a substring (part of a string) between two indexes.
  * The substring from index a up to (but not including) index b should be returned.
  * 
@@ -124,4 +124,10 @@ function starsBorder(picture){
  * Output:  "cd"
  */
 
+    function subString(s, a, b) {
+        if(a < 0) a = 0;
+        if(b > s.length) b = s.length;
+        return s.slice(a, b)
+    }
     
+
