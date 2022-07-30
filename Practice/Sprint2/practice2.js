@@ -143,3 +143,28 @@ function numberOfDigits(num){
     return Math.floor(Math.log10(Math.abs(num))) + 1
 }
 
+
+/**
+ * -- Multiplication Table
+ * 
+ * Write a function that builds an n x n multiplication table.
+ * 
+ * The result will be a 2D array. 
+ * The 0th row and column of the table begin with 1 and end with n.
+ * 
+ * Ex:
+ * 
+ * Input:  n == 4
+ * 
+ * Output:
+ * 
+ * [
+        [1, 2,  3,  4],
+        [2, 4,  6,  8],
+        [3, 6,  9, 12],
+        [4, 8, 12, 16]
+    ]
+ * 
+ */
+
+    
