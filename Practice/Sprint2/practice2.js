@@ -84,6 +84,7 @@ function identityMatrix(size) {
 function starsBorder(picture){
     function solution(picture) {
 
+        // correction --> var answer = ['**'];
         var answer = [''];
       
         for (var i = 0; i < picture[0].length; i++) {
@@ -104,3 +105,4 @@ function starsBorder(picture){
       }
       
 }
+
