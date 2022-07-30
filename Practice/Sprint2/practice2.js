@@ -131,3 +131,15 @@ function starsBorder(picture){
     }
     
 
+/**
+ * -- Number of Digits
+ * 
+ * Given a number, return the number of digits.
+ * You may not use strings to solve this challenge.
+ * 
+ */
+
+function numberOfDigits(num){
+    return Math.floor(Math.log10(Math.abs(num))) + 1
+}
+
